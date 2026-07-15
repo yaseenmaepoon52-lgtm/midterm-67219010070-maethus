@@ -1,7 +1,6 @@
-/* คุมโทนสีพื้นหลัง ขาว-เหลืองพาสเทล มินิมอล อบอุ่น สบายตา */
 body {
-    background-color: #fff1f2; 
-    color: #333333;
+    background: linear-gradient(180deg,#fff7f8 0%,#fff3e8 100%);
+    color: #333;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
@@ -86,14 +85,12 @@ body {
     box-shadow: 0 12px 28px rgba(180,150,50,0.1);
 }
 
-/* 🟢 ปรับรูปภาพอนิเมะให้สูงงงงงงตาแตกแบบเก็บรายละเอียดโปสเตอร์ครบถ้วน ไม่โดนตัดหัวท้าย */
-.bento-card img {
-    width: 100%;
-    height: 380px; /* ขยายจาก 220px ขึ้นเป็น 380px สูงโปร่งสะใจโชว์ลายเส้นเต็มๆ */
-    object-fit: cover; 
-    border-radius: 14px;
-    margin-top: 25px;
-    margin-bottom: 12px;
+.bento-card img{
+    transition:.4s;
+}
+
+.bento-card:hover img{
+    transform:scale(1.05);
 }
 
 .bento-card h3 {
@@ -132,38 +129,43 @@ body {
     gap: 24px;
 }
 
-.song-card {
-    background-color: #ffffff;
-    border-radius: 24px; 
-    padding: 24px; 
-    display: flex;
-    align-items: center;
-    gap: 35px;
-    position: relative;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.02);
-    border: 1px solid rgba(0,0,0,0.02);
-    transition: all 0.3s ease;
+.song-card{
+    background: rgba(255,255,255,.92);
+    backdrop-filter: blur(8px);
+    border-radius:28px;
+    border:1px solid rgba(255,255,255,.8);
+    box-shadow:
+        0 15px 40px rgba(0,0,0,.08),
+        0 5px 15px rgba(255,150,150,.08);
+    transition:.35s;
 }
 
-.song-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 12px 30px rgba(180,150,50,0.08);
+.song-card:hover{
+    transform:translateY(-8px) scale(1.01);
+    box-shadow:
+        0 25px 50px rgba(0,0,0,.12),
+        0 10px 30px rgba(255,100,100,.15);
 }
 
-/* 📺 🟢 หน้าจอวิดีโอ YouTube ปรับให้กินพื้นที่ 70% ของกล่องเพลง ใหญ่สะใจตาแตก! */
-.video-container {
-    flex: 7; /* สัดส่วนเลข 7 (คิดเป็น 70%) */
-    aspect-ratio: 16 / 9; /* ล็อกสัดส่วนให้วิดีโอขยายใหญ่ตามขอบจอโดยที่ภาพไม่เบี้ยว */
-    border-radius: 16px; 
-    overflow: hidden;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.12); 
-    border: 1px solid rgba(0,0,0,0.05);
+.video-container{
+    flex:7;
+    aspect-ratio:16/9;
+    overflow:hidden;
+    border-radius:18px;
+    border:2px solid rgba(255,255,255,.6);
+    box-shadow:
+        0 15px 35px rgba(0,0,0,.15);
 }
 
-.video-container iframe {
-    width: 100%;
-    height: 100%;
-    border: none;
+.video-container iframe{
+    width:100%;
+    height:100%;
+    border:none;
+    transition:.4s;
+}
+
+.song-card:hover iframe{
+    transform:scale(1.04);
 }
 
 /* 🟢 กลุ่มข้อมูลชื่อเพลง ปรับให้กินพื้นที่ 30% ที่เหลือ */
@@ -174,26 +176,23 @@ body {
     gap: 8px;
 }
 
-.song-card h4 {
-    margin: 0;
-    font-size: 22px; /* เพิ่มขนาดฟอนต์ให้เด่นขึ้นรับกับจอเพลงยักษ์ */
-    font-weight: bold;
-    color: #333;
-    line-height: 1.4;
+.song-card h4{
+    font-size:30px;
+    margin-bottom:12px;
+    color:#2b2b2b;
 }
 
-/* แท็กตัวเลขอันดับของเพลง */
-.song-rank {
-    position: absolute;
-    top: 24px;
-    right: 24px; 
-    left: auto;
-    background:#fee2e2;
-    border: 1px solid #f87171;
-    color: #991b1b;
-    padding: 5px 14px;
-    border-radius: 12px;
-    font-size: 14px;
+.song-info{
+    gap:15px;
+}
+
+.song-rank{
+    background:linear-gradient(135deg,#ff6b6b,#ff8787);
+    color:white;
+    font-weight:700;
+    padding:8px 18px;
+    border:none;
+    box-shadow:0 6px 18px rgba(255,100,100,.35);
 }
 
 /* ปุ่มกดทักทาย มินิมอล */
