@@ -1,6 +1,6 @@
 /* คุมโทนสีพื้นหลัง ขาว-เหลืองพาสเทล มินิมอล อบอุ่น สบายตา */
 body {
-    background-color: #fdfbf2; 
+    background-color: #fff1f2; 
     color: #333333;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
@@ -116,7 +116,7 @@ body {
     top: 15px;
     left: 15px;
     background: linear-gradient(135deg, #ffe082, #ffd54f);
-    color: #5d4037;
+    color: #5d3737;
     padding: 4px 12px;
     border-radius: 10px;
     font-weight: bold;
@@ -147,7 +147,7 @@ body {
 
 .song-card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 12px 30px rgba(180,150,50,0.08);
+    box-shadow: 0 12px 30px rgba(220,38,38,.18);
 }
 
 /* 📺 🟢 หน้าจอวิดีโอ YouTube ปรับให้กินพื้นที่ 70% ของกล่องเพลง ใหญ่สะใจตาแตก! */
@@ -156,7 +156,7 @@ body {
     aspect-ratio: 16 / 9; /* ล็อกสัดส่วนให้วิดีโอขยายใหญ่ตามขอบจอโดยที่ภาพไม่เบี้ยว */
     border-radius: 16px; 
     overflow: hidden;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.12); 
+    box-shadow: 0 10px 25px rgba(220,38,38,.18); 
     border: 1px solid rgba(0,0,0,0.05);
 }
 
@@ -178,7 +178,7 @@ body {
     margin: 0;
     font-size: 22px; /* เพิ่มขนาดฟอนต์ให้เด่นขึ้นรับกับจอเพลงยักษ์ */
     font-weight: bold;
-    color: #333;
+    color: #991b1b;
     line-height: 1.4;
 }
 
@@ -188,9 +188,9 @@ body {
     top: 24px;
     right: 24px; 
     left: auto;
-    background: #fff8e1;
-    border: 1px solid #ffe082;
-    color: #b57a35;
+    background: #fee2e2;
+    border: 1px solid #f87171;
+    color: #991b1b;
     padding: 5px 14px;
     border-radius: 12px;
     font-size: 14px;
@@ -200,19 +200,19 @@ body {
 button {
     display: block;
     margin: 50px auto 0 auto;
-    background: linear-gradient(135deg, #ffe082, #ffd54f);
-    color: #5d4037;
+    background: linear-gradient(135deg, #ef4444,#dc2626);
+    color: #5d3737;
     border: none;
     padding: 14px 36px;
     font-size: 16px;
     font-weight: bold;
     border-radius: 16px;
     cursor: pointer;
-    box-shadow: 0 6px 20px rgba(255, 224, 130, 0.4);
+    box-shadow: 0 6px 20px rgba(220,38,38,.35);
     transition: all 0.2s ease;
 }
 
 button:hover {
     transform: scale(1.03);
-    box-shadow: 0 8px 24px rgba(255, 224, 130, 0.5);
+    box-shadow: 0 8px 24px rgba(220,38,38,.45);
 }
