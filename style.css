@@ -1,6 +1,6 @@
 /* คุมโทนสีพื้นหลัง ขาว-เหลืองพาสเทล มินิมอล อบอุ่น สบายตา */
 body {
-    background-color: #fcdfd9; 
+    background-color: #fff1f2; 
     color: #333333;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
@@ -115,8 +115,8 @@ body {
     position: absolute;
     top: 15px;
     left: 15px;
-    background: linear-gradient(135deg, #ffe082, #ffd54f);
-    color: #5d4037;
+    background: linear-gradient(135deg, #ef4444, #dc2626);
+    color: #752e2e;
     padding: 4px 12px;
     border-radius: 10px;
     font-weight: bold;
@@ -188,9 +188,9 @@ body {
     top: 24px;
     right: 24px; 
     left: auto;
-    background: #fff8e1;
-    border: 1px solid #ffe082;
-    color: #b57a35;
+    background:#fee2e2;
+    border: 1px solid #f87171;
+    color: #991b1b;
     padding: 5px 14px;
     border-radius: 12px;
     font-size: 14px;
@@ -200,8 +200,8 @@ body {
 button {
     display: block;
     margin: 50px auto 0 auto;
-    background: linear-gradient(135deg, #ffe082, #ffd54f);
-    color: #5d4037;
+    background: linear-gradient(135deg, #ef4444, #dc2626);
+    color: #752e2e;
     border: none;
     padding: 14px 36px;
     font-size: 16px;
